@@ -34,8 +34,7 @@ target_compile_definitions(project_paths INTERFACE
 # Это самое главное, что вы должны реализовать в рамках семестрового проекта.
 
 add_library(${PROJECT_NAME} STATIC
-        src/data_structure.cpp
-        include/data_structure.hpp)
+        include/assignment/data_structure.hpp include/assignment/node.hpp src/node.cpp include/assignment/queue.hpp include/assignment/linked_queue.hpp src/linked_queue.cpp include/assignment/circular_buffer.hpp src/circular_buffer.cpp)
 
 # включить предупреждения компилятора для библиотеки (линковка)
 target_link_libraries(${PROJECT_NAME} PRIVATE project_warnings)
